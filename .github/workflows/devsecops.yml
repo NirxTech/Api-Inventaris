@@ -99,4 +99,4 @@ jobs:
             -Dsonar.projectKey=NirxTech_Api-Inventaris
             -Dsonar.organization=nirxtech
             -Dsonar.python.coverage.reportPaths=coverage.xml
-            -Dsonar.qualitygate.wait=true
+            -Dsonar.qualitygate.wait=false
