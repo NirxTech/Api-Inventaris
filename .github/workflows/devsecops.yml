@@ -99,6 +99,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.projectKey=api-inventory-project
+            -Dsonar.projectKey=NirxTech_Api-Inventaris
+            -Dsonar.organization=nirxtech
             -Dsonar.python.coverage.reportPaths=coverage.xml
             -Dsonar.qualitygate.wait=true
