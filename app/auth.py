@@ -1,10 +1,12 @@
+import os
 from datetime import datetime, timedelta
 from jose import jwt
 from passlib.context import CryptContext
 from fastapi.security import OAuth2PasswordBearer
 
+
 # Konfigurasi Keamanan (Dalam proyek nyata, SECRET_KEY harus diletakkan di file .env)
-SECRET_KEY = "super-secret-key-untuk-tugas-rpl-bab-11"
+SECRET_KEY = os.getenv("SECRET_KEY", "kunci-rahasia-sementara")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
